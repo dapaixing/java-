@@ -1,8 +1,11 @@
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.Scanner;
 
 import jpcap.*;
 import jpcap.packet.IPPacket;
 import jpcap.packet.Packet;
+
 
 public class Test {
 
@@ -20,9 +23,8 @@ public class Test {
         JpcapCaptor jpcap = null;
         int caplen = 1512;
         boolean promiscCheck = true;
-
         try{
-            jpcap = JpcapCaptor.openDevice(devices[2], caplen, promiscCheck, 50);
+            jpcap = JpcapCaptor.openDevice(devices[6], caplen, promiscCheck, 50);
         }catch(IOException e)
         {
             e.printStackTrace();
@@ -35,9 +37,24 @@ public class Test {
             Packet packet  = jpcap.getPacket();
             if(packet instanceof IPPacket && ((IPPacket)packet).version == 4)
             {
+                /*
+                存在问题：将捕获到的数据包按16进制或二进制打印到控制台
+                */
+                byte [] bytes = packet.data;
+                int n = 0;
+                for (byte aByte : bytes) {
+                    Integer.toHexString(aByte);
+                    System.out.print(Integer.toHexString(aByte)+' ');
+                    n++;
+                    if (n == 10){
+                        System.out.println();
+                        n = 0;
+                    }
+                }
+
+                System.out.println();
                 i++;
                 IPPacket ip = (IPPacket)packet;//强转
-
                 System.out.println("版本：IPv4");
                 System.out.println("优先权：" + ip.priority);
                 System.out.println("区分服务：最大的吞吐量： " + ip.t_flag);
@@ -70,10 +87,5 @@ public class Test {
                 System.out.println("----------------------------------------------");
             }
         }
-
-
-
-
     }
-
 }
