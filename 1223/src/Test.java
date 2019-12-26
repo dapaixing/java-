@@ -32,11 +32,11 @@ public class Test {
 
         /*----------第二步抓包-----------------*/
         int i = 0;
-        while(i < 10)
+        while(true)
         {
             Packet packet  = jpcap.getPacket();
             if(packet instanceof IPPacket && ((IPPacket)packet).version == 4) {
-                if (packet.data != null) {
+//                if (packet.data != null) {
                     byte[] bytes = packet.data;
                     int n = 0;
                     for (byte aByte : bytes) {
@@ -104,8 +104,11 @@ public class Test {
                     System.out.println("源主机名： " + ip.src_ip);
                     System.out.println("目的主机名： " + ip.dst_ip);
                     System.out.println("----------------------------------------------");
+                    if (protocol == "IPv6"){
+                        break;
+                    }
                 }
-            }
+           // }
         }
     }
 }
