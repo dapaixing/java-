@@ -26,11 +26,12 @@ public class SimpleHTTPServer {
                 Request request = Request.parse(is);
                 System.out.println(request);
                 if (request.path.equalsIgnoreCase("/")){
-                    String body = "<h1>成功</h1>";
+//                    String body = "<h1>成功</h1>";
+                    String body = "alert('必须关掉');";
                     byte[] bodyBuffer = body.getBytes("UTF-8");
                     StringBuilder response = new StringBuilder();
                     response.append("HTTP/1.0 200 OK\r\n");
-                    response.append("Content-Type:text/html;charset = UTF-8\r\n");
+                    response.append("Content-Type:text/html; charset=UTF-8\r\n");
                     response.append("Content-Lenght: ");
                     response.append(bodyBuffer.length);
                     response.append("\r\n");
@@ -40,9 +41,30 @@ public class SimpleHTTPServer {
                     os.write(bodyBuffer);
                     os.flush();
 
-                }else {
+                }else if (request.path.equalsIgnoreCase("/run")){
+                    String body = "<script src='/'></script>";
+                    byte[] bodyBuffer = body.getBytes("UTF-8");
+//                    StringBuilder response = new StringBuilder();
+//                    response.append("HTTP/1.0 404 Not Fount\r\n");
+//                    response.append("\r\n");
+//                    os.write(response.toString().getBytes("UTF-8"));
+//                    os.flush();
                     StringBuilder response = new StringBuilder();
-                    response.append("HTTP/1.0 404 Not Fount\r\n");
+                    response.append("HTTP/1.0 200 OK\r\n");
+                    response.append("Content-Type: text/html; charset=UTF-8\r\n");
+                    response.append("Content-Length: ");
+                    response.append(bodyBuffer.length);
+                    response.append("\r\n");
+                    response.append("\r\n");
+
+                    os.write(response.toString().getBytes("UTF-8"));
+                    os.write(bodyBuffer);
+                    os.flush();
+
+                }else if (request.path.equalsIgnoreCase("/banjia")){
+                    StringBuilder response = new StringBuilder();
+                    response.append("HTTP/1.0 307 Temporary Redirect\r\n");
+                    response.append("LOcation: /run\r\n");
                     response.append("\r\n");
                     os.write(response.toString().getBytes("UTF-8"));
                     os.flush();
