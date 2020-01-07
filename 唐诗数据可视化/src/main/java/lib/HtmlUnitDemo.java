@@ -19,15 +19,23 @@ public class HtmlUnitDemo {
         //关闭了浏览器的css执行引擎，不再执行网页中的css布局
         webClient.getOptions().setCssEnabled(false);
         //以浏览器身份访问古诗文网站
-        HtmlPage page = webClient.getPage("https://www.gushiwen.org/gushi/tangshi.aspx");
+        HtmlPage page = webClient.getPage("https://so.gushiwen.org/gushi/tangshi.aspx");
         System.out.println(page);
         //将获取到的数据方法目标目录下
         page.save(new File("target\\唐诗三百首\\列表页.html"));
 
-        File file = n
-        HtmlElement body = page.getBody();
-        List<HtmlElement> element = body.getElementsByAttribute("div", "class", "typecont");
 
+        HtmlElement body = page.getBody();
+        List<HtmlElement> elements = body.getElementsByAttribute("div", "class", "typecont");
+        int count = 0;
+        for (HtmlElement element : elements) {
+            List<HtmlElement> aElements = element.getElementsByTagName("a");
+            for (HtmlElement aElement : aElements) {
+                System.out.println(aElement.getAttribute("hret"));
+                count++;
+            }
+        }
+        System.out.println(count);
 
     }
 }
