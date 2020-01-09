@@ -2,5 +2,6 @@
 <project version="4">
   <component name="ExcludeFromValidation">
     <file url="file://$PROJECT_DIR$/src/main/java/lib/Demo.java" />
+    <file url="file://$PROJECT_DIR$/src/main/java/lib/chaRuShiCiDemo.java" />
   </component>
 </project>
