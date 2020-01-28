@@ -4,18 +4,18 @@ import java.io.*;
 
 public class Copy {
     public static void main(String[] args) {
+        long t1 = System.currentTimeMillis();
         copy("4.png","6.png");
+        long t2 = System.currentTimeMillis();
+        System.out.println(t2-t1);
     }
     public static void copy(String srcPath,String destPath){
         File src = new File(srcPath);
         File dest = new File(destPath);
 
-        InputStream is = null;
-        OutputStream os = null;
+        try(InputStream is = new BufferedInputStream(new FileInputStream(src));
+            OutputStream os = new BufferedOutputStream(new FileOutputStream(dest))) {
 
-        try {
-            is = new FileInputStream(src);
-            os = new FileOutputStream(dest);
             byte[] datas = new byte[1024];
             int len = -1;
             while ((len = is.read(datas))!=-1){
@@ -25,20 +25,6 @@ public class Copy {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
-            try {
-                if (null!=os)
-                    os.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            try {
-                if (null!=is)
-                    is.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
     }
 }
