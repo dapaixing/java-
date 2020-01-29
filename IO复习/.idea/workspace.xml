@@ -15,39 +15,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/缓冲流/BufferedTest03.java">
+        <entry file="file://$PROJECT_DIR$/src/序列化/ObjectTest01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/缓冲流/BufferedTest04.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/d.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/缓冲流/CopyTxT.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="1000">
+              <caret line="41" column="70" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/abcCopy.txt">
+        <entry file="file://$PROJECT_DIR$/src/打印流/PrintTest01.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/print.txt">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -91,6 +80,12 @@
         <option value="$PROJECT_DIR$/src/缓冲流/BufferedTest03.java" />
         <option value="$PROJECT_DIR$/src/缓冲流/BufferedTest04.java" />
         <option value="$PROJECT_DIR$/src/缓冲流/CopyTxT.java" />
+        <option value="$PROJECT_DIR$/src/字符集/ConvertTest.java" />
+        <option value="$PROJECT_DIR$/src/字符集/ConvertTest02.java" />
+        <option value="$PROJECT_DIR$/src/数据流/DataTest01.java" />
+        <option value="$PROJECT_DIR$/src/序列化.java" />
+        <option value="$PROJECT_DIR$/src/序列化/ObjectTest01.java" />
+        <option value="$PROJECT_DIR$/src/打印流/PrintTest01.java" />
       </list>
     </option>
   </component>
@@ -124,7 +119,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -148,7 +142,19 @@
               <item name="IO复习" type="b2602c69:ProjectViewProjectNode" />
               <item name="IO复习" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="字符集" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IO复习" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IO复习" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="抽象类" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IO复习" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IO复习" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="数据流" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IO复习" type="b2602c69:ProjectViewProjectNode" />
@@ -160,6 +166,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -176,6 +183,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="字符集" />
       <recent name="缓冲流" />
       <recent name="抽象类" />
     </key>
@@ -195,13 +203,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CopyTxT">
-    <configuration name="BufferedTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="缓冲流.BufferedTest02" />
+  <component name="RunManager" selected="Application.PrintTest01">
+    <configuration name="ConvertTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="字符集.ConvertTest" />
       <module name="IO复习" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="缓冲流.*" />
+          <option name="PATTERN" value="字符集.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -209,12 +217,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BufferedTest03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="缓冲流.BufferedTest03" />
+    <configuration name="ConvertTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="字符集.ConvertTest02" />
       <module name="IO复习" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="缓冲流.*" />
+          <option name="PATTERN" value="字符集.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -222,12 +230,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BufferedTest04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="缓冲流.BufferedTest04" />
+    <configuration name="DataTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="数据流.DataTest01" />
       <module name="IO复习" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="缓冲流.*" />
+          <option name="PATTERN" value="数据流.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -235,12 +243,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Copy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="抽象类.Copy" />
+    <configuration name="ObjectTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="序列化.ObjectTest01" />
       <module name="IO复习" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="抽象类.*" />
+          <option name="PATTERN" value="序列化.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -248,12 +256,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CopyTxT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="缓冲流.CopyTxT" />
+    <configuration name="PrintTest01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="打印流.PrintTest01" />
       <module name="IO复习" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="缓冲流.*" />
+          <option name="PATTERN" value="打印流.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -263,11 +271,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CopyTxT" />
-        <item itemvalue="Application.BufferedTest04" />
-        <item itemvalue="Application.BufferedTest03" />
-        <item itemvalue="Application.Copy" />
-        <item itemvalue="Application.BufferedTest02" />
+        <item itemvalue="Application.PrintTest01" />
+        <item itemvalue="Application.ObjectTest01" />
+        <item itemvalue="Application.DataTest01" />
+        <item itemvalue="Application.ConvertTest02" />
+        <item itemvalue="Application.ConvertTest" />
       </list>
     </recent_temporary>
   </component>
@@ -288,11 +296,13 @@
       <workItem from="1580201972235" duration="120000" />
       <workItem from="1580202366530" duration="2890000" />
       <workItem from="1580210329303" duration="1314000" />
+      <workItem from="1580287953023" duration="5495000" />
+      <workItem from="1580293634826" duration="301000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25273000" />
+    <option name="totallyTimeSpent" value="31069000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -307,7 +317,7 @@
     <frame x="-7" y="-7" width="1455" height="935" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27129564" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27916965" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="设计器" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -353,51 +363,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/IO复习.iml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sxt/io/FileDemo02.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sxt/io/FileDemo04.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sxt/io/PrintDir.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sxt/io/ContentEncode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sxt/io/FileDemo03.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sxt/io/PathDemo01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/抽象类/abc" />
     <entry file="file://$PROJECT_DIR$/src/抽象类/abc.txt" />
@@ -520,27 +485,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/缓冲流/BufferedTest01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/抽象类/IOTest04.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/缓冲流/BufferedTest02.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -554,10 +502,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/d.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abcCopy.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baidu.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/序列化.java" />
     <entry file="file://$PROJECT_DIR$/src/缓冲流/BufferedTest03.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="464">
           <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/缓冲流/BufferedTest02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/缓冲流/BufferedTest01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/字符集/ConvertTest02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/字符集/ConvertTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sxt/io/PrintDir.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sxt/io/PathDemo01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sxt/io/FileDemo04.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sxt/io/FileDemo03.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sxt/io/FileDemo02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sxt/io/ContentEncode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/缓冲流/CopyTxT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -568,18 +616,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/d.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/缓冲流/CopyTxT.java">
+    <entry file="file://$PROJECT_DIR$/src/数据流/DataTest01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="550">
+          <caret line="22" column="33" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="22" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/abcCopy.txt">
+    <entry file="file://$PROJECT_DIR$/src/打印流.java" />
+    <entry file="file://$PROJECT_DIR$/src/序列化/ObjectTest01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="41" column="70" selection-start-line="41" selection-start-column="70" selection-end-line="41" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/print.txt">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/打印流/PrintTest01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
