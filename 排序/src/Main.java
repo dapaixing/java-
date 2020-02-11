@@ -28,4 +28,33 @@ public class Main {
             array[left] = v;
         }
     }
+    public static void insertSort2(int [] array){
+        for (int i = 0; i < array.length; i++) {
+            int v = array[i];
+            int j = i-1;
+            for(;j>=0&&v<array[j];j--){
+                array[j+1] = array[j];
+            }
+            array[j+1] = v;
+        }
+    }
+    public static void bsInsertSort2(int [] array){
+        for (int i = 0; i < array.length; i++) {
+            int v = array[i];
+            int left = 0;
+            int right = i;
+            while (left<right){
+                int m = (left+right)/2;
+                if (array[m]<=v){
+                    left = m;
+                }else {
+                    right = m;
+                }
+            }
+            for (int j = i;j>left;j--){
+                array[j] = array[j-1];
+            }
+            array[left] = v;
+        }
+    }
 }
