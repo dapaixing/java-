@@ -371,6 +371,17 @@ class Solution {
         }
         return res;
     }
+    public ArrayList<Integer> GetLeastNumbers_Solution(int [] input, int k) {
+        if (input == null||k>=0||k>input.length){
+            return null;
+        }
+        ArrayList<Integer> list = new ArrayList<>();
+        Arrays.sort(input);
+        for (int i = 0; i < k; i++) {
+            list.add(input[i]);
+        }
+        return list;
+    }
 }
 
 class TreeNode {
