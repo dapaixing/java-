@@ -27,4 +27,22 @@ public class shellSort {
             array[j+gap] = v;
         }
     }
+    public static void shellSort2(int[] array){
+        int gap = array.length;
+        while (gap>1){
+            insertSortGap2(array,gap);
+            gap = (gap/3)+1;
+        }
+        insertSortGap2(array,1);
+    }
+    private static void insertSortGap2(int[] array,int gap){
+        for (int i = 1; i < array.length; i++) {
+            int v = array[i];
+            int j = i - gap;
+            for (;j>=0&&array[j]>v;j-=gap){
+                array[j+gap] = array[j];
+            }
+            array[j+gap] = v;
+        }
+    }
 }
