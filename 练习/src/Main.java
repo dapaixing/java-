@@ -1,37 +1,3 @@
-//import java.util.Scanner;
-//
-//public class Main {
-//    public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//        while (sc.hasNextLine()) {
-//            String s = sc.nextLine();
-//            System.out.println(maxString(s));
-//        }
-//    }
-//
-//    private static String maxString(String s) {
-//        char[] chars = s.toCharArray();
-//        String str = "";
-//        for (char aChar : chars) {
-//            if (aChar<='9'&&aChar>='0'){
-//                str+=aChar;
-//            }else {
-//                str+=" ";
-//            }
-//        }
-//        String[] result = str.split(" ");
-//        int length = result[0].length();
-//        for (int i = 1; i < result.length; i++) {
-//            if (result[i].length()>length){
-//                length = result[i].length();
-//                str = result[i];
-//            }
-//        }
-//        return str;
-//    }
-//}
-链接：https://www.nowcoder.com/questionTerminal/d2cced737eb54a3aa550f53bb3cc19d0
-        来源：牛客网
 
 import java.util.*;
 
@@ -103,5 +69,33 @@ class Solution1 {
         }
         Convert(pRootOfTree.left);
         return pre;
+    }
+
+    public static void main(String[] args) {
+        int [] array = {1,2,3,2,2,2,5,4,2};
+        int a = MoreThanHalfNum_Solution(array);
+        System.out.println(a);
+    }
+    public static int MoreThanHalfNum_Solution(int [] array) {
+        if(array == null||array.length == 0){
+            return 0;
+        }
+        int max = 0;
+        int temp = 0;
+        Arrays.sort(array);
+        int v = array[0];
+        for(int i = 1;i<array.length;i++){
+            if(temp > (array.length)/2){
+                max = array[i-1];
+                break;
+            }
+            if(v==array[i]){
+                temp++;
+            }else{
+                v = array[i];
+                temp = 1;
+            }
+        }
+        return max;
     }
 }
