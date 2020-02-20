@@ -1,0 +1,7 @@
+public class Solution {
+    public int Sum_Solution(int n) {
+        double n1 = (n+1)/2.0;
+        int num = (int)(n1*n);
+        return num;
+    }
+}
