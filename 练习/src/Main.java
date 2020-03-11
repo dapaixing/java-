@@ -349,38 +349,179 @@
 //    }
 //}
 
+//import java.util.*;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        Map<String, Integer> map = new LinkedHashMap<String, Integer>();
+//        int count = 0;
+//        while (sc.hasNextLine()) {
+//            String str_1 = sc.nextLine();
+//            mapDispose(map, str_1);
+//        }
+//        for (String st : map.keySet()) {
+//            count++;
+//            if (count > (map.size() - 8)) {
+//                System.out.println(st + " " + map.get(st));
+//            }
+//        }
+//    }
+//
+//    public static void mapDispose(Map<String, Integer> map, String str) {
+//        String[] strArr = str.split("\\s+");
+//        String[] nameArr = strArr[0].split("\\\\");
+//        int num = Integer.parseInt(strArr[1]);
+//        String name = nameArr[nameArr.length - 1];
+//        if (name.length() > 16) {
+//            name = name.substring(name.length() - 16);
+//        }
+//        String key = name + " " + num;
+//        if (map.containsKey(key)) {
+//            map.put(key, map.get(key) + 1);
+//        } else {
+//            map.put(key, 1);
+//        }
+//    }
+//}
+
+//import java.util.Scanner;
+//public class Main {
+//    private static final int[] W = {17*29,29,1};
+//    public static void main(String[] args) {
+//        Scanner in = new Scanner(System.in);
+//        String[] p = in.next().split("\\.");
+//        String[] a = in.next().split("\\.");
+//        int[] P = {Integer.parseInt(p[0]),Integer.parseInt(p[1]),Integer.parseInt(p[2])};
+//        int[] A = {Integer.parseInt(a[0]),Integer.parseInt(a[1]),Integer.parseInt(a[2])};
+//        int ta = A[0]*W[0]+A[1]*W[1]+A[2]*W[2];
+//        int tp = P[0]*W[0]+P[1]*W[1]+P[2]*W[2];
+//        int t = ta-tp;
+//        if(ta<tp){
+//            System.out.print("-");
+//            t = -t;
+//        }
+//        System.out.println(t/W[0]+"."+t%W[0]/W[1]+"."+t%W[0]%W[1]/W[2]);
+//    }
+//
+//    public int countNumberOf2s(int n) {
+//        // write code here
+//        int count = 0;
+//        for (int i = 1; i <= n; i *= 10) {
+//            int a = n / i,b = n % i;
+//            //之所以补8，是因为当百位为0，则a/10==(a+8)/10，
+//            //当百位>=2，补8会产生进位位，效果等同于(a/10+1)
+//            count += (a + 7) / 10 * i + ((a % 10 == 2) ? b + 1 : 0);
+//        }
+//        return count;
+//    }
+//}
+
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        while (sc.hasNext()) {
+//            int n = sc.nextInt();
+//            int v = 0;
+//            int f = 0;
+//            Map<Character, Integer> mapA = new TreeMap<>();
+//            Map<Character, Integer> mapB = new TreeMap<>();
+//            for (int i = 0; i < n; i++) {
+//                char a = sc.next().charAt(0);
+//                char b = sc.next().charAt(0);
+//                int re = match(a, b);
+//                if (re == 1) {
+//                    v++;
+//                    if (mapA.containsKey(a)) {
+//                        mapA.put(a, mapA.get(a) + 1);
+//                    } else {
+//                        mapA.put(a, 1);
+//                    }
+//
+//                } else if (re == -1) {
+//                    f++;
+//                    if (mapB.containsKey(b)) {
+//                        mapB.put(b, mapB.get(b) + 1);
+//                    } else {
+//                        mapB.put(b, 1);
+//                    }
+//                }
+//            }
+//            System.out.println(v + " " + (n - v - f) + " " + f);
+//            System.out.println(f + " " + (n - v - f) + " " + v);
+//            int max = 0;
+//            for (Map.Entry<Character, Integer> m : mapA.entrySet()) {
+//                if (m.getValue() > max) {
+//                    max = m.getValue();
+//                }
+//            }
+//            if (max == 0) {
+//                System.out.print("B");
+//            } else {
+//                for (Map.Entry<Character, Integer> m : mapA.entrySet()) {
+//                    if (m.getValue() == max) {
+//                        System.out.print(m.getKey());
+//                        break;
+//                    }
+//                }
+//            }
+//            max = 0;
+//            System.out.print(" ");
+//            for (Map.Entry<Character, Integer> m : mapB.entrySet()) {
+//                if (m.getValue() > max) {
+//                    max = m.getValue();
+//                }
+//            }
+//            if (max == 0) {
+//                System.out.print("B");
+//            } else {
+//                for (Map.Entry<Character, Integer> m : mapB.entrySet()) {
+//                    if (m.getValue() == max) {
+//                        System.out.print(m.getKey());
+//                        break;
+//                    }
+//                }
+//            }
+//        }
+//    }
+//
+//    public static int match(char a, char b) {
+//        if (a == b) {
+//            return 0;
+//        } else if ((a == 'C' && b == 'J') || (a == 'J' && b == 'B') || (a == 'B' && b == 'C')) {
+//            return 1;
+//        } else {
+//            return -1;
+//        }
+//    }
+//
+//    public int countWays(int n) {
+//        // write code here
+//        long[] pre = {1, 2, 4};
+//        if(n<=0) return 0;
+//        else if(n<=3) return (int)pre[n-1];
+//        else{
+//            for(int i=4; i<=n; i++){
+//                long tmp = ((pre[0] + pre[1])%1000000007 +pre[2])%1000000007;
+//                pre[0] = pre[1];
+//                pre[1] = pre[2];
+//                pre[2] = tmp;
+//            }
+//        }
+//        return (int)pre[2];
+//    }
+    public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
-        Map<String, Integer> map = new LinkedHashMap<String, Integer>();
-        int count = 0;
-        while (sc.hasNextLine()) {
-            String str_1 = sc.nextLine();
-            mapDispose(map, str_1);
-        }
-        for (String st : map.keySet()) {
-            count++;
-            if (count > (map.size() - 8)) {
-                System.out.println(st + " " + map.get(st));
-            }
-        }
-    }
-
-    public static void mapDispose(Map<String, Integer> map, String str) {
-        String[] strArr = str.split("\\s+");
-        String[] nameArr = strArr[0].split("\\\\");
-        int num = Integer.parseInt(strArr[1]);
-        String name = nameArr[nameArr.length - 1];
-        if (name.length() > 16) {
-            name = name.substring(name.length() - 16);
-        }
-        String key = name + " " + num;
-        if (map.containsKey(key)) {
-            map.put(key, map.get(key) + 1);
-        } else {
-            map.put(key, 1);
-        }
+        int x0 = sc.nextInt();
+        int y0 = sc.nextInt();
+        int z0 = sc.nextInt();
+        int x1 = sc.nextInt();
+        int y1 = sc.nextInt();
+        int z1 = sc.nextInt();
+        double r = Math.sqrt(Math.pow((x1-x0),2 )+Math.pow((y1-y0),2)+Math.pow((z1-z0),2));
+        double volume = (4.0/3.0)*Math.PI*Math.pow(r,3 );
+        System.out.printf("%.3f %.3f",r,volume);
     }
 }
