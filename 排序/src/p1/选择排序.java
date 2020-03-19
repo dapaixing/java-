@@ -40,4 +40,22 @@ public class 选择排序 {
             }
         }
     }
+    public static void selectSort3(int [] arr){
+        for (int i = 0; i < arr.length; i++) {
+            int a = i;
+            for (int j = i; j < arr.length; j++) {
+                if (arr[a] > arr[j]){
+                    a = j;
+                }
+            }
+            if (a != i){
+                swp(arr,a,i);
+            }
+        }
+    }
+    private static void swp(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
 }
