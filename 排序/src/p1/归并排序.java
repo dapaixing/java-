@@ -47,7 +47,7 @@ public class 归并排序 {
         while (i<=mid){
             extra[k++] = array[i++];
         }
-        while (j<=high){
+        while (j<=length){
             extra[k++] = array[j++];
         }
         System.arraycopy(extra,0,array,low,length-low+1);

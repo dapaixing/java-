@@ -16,6 +16,39 @@ public class 堆排 {
             shiftDown(arr,0,arr.length-i-1);
         }
     }
+    private static void heapSort3(int[] arr){
+        creaHeap3(arr);
+        for (int i = 0; i < arr.length - 1; i++) {
+            swp(arr,0,arr.length-i-1);
+            shiftDown3(arr,0,arr.length-1-i);
+        }
+    }
+
+    private static void shiftDown3(int[] arr, int index, int size) {
+        int left = 2*index+1;
+        while (left<size){
+            int max = left;
+            int right = left+1;
+            if (right<size){
+                if (arr[right]>arr[left]){
+                    max = right;
+                }
+            }
+            if (arr[max]<=arr[index]){
+                break;
+            }
+            swp(arr,max,index);
+            index = max;
+            left = 2*index+1;
+        }
+    }
+
+    private static void creaHeap3(int[] arr) {
+        for(int i = (arr.length-1)/2;i>=0;i--){
+            shiftDown3(arr,i,arr.length);
+        }
+    }
+
     private static void creaHeap(int[] arr){
         for (int i = (arr.length-1)/2;i>=0;i--){
             shiftDown(arr,i,arr.length);
@@ -38,6 +71,9 @@ public class 堆排 {
             index = max;
             left = index*2+1;
         }
+        StringBuffer stringBuffer = new StringBuffer();
+        stringBuffer.append(12);
+        System.out.println(stringBuffer.toString());
     }
     private static void swp(int[] arr,int i,int j){
         int t = arr[i];
