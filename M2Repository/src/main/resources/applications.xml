@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 新增这里 -->
+    <bean id="myName" class="java.lang.String">
+        <constructor-arg value="小比特" />
+    </bean>
+    <bean id = "duck1" class="frank.ioc.Duck">
+        <!--<property name="name" ref="myName" />-->
+        <!--<property name="age" value="20" />-->
+        <constructor-arg name="name" ref="myName" />
+        <!--<property name="age" value="20" />-->
+        <constructor-arg name="age" value="20"/>
+    </bean>
+    <bean id = "duck2" class="frank.ioc.Duck">
+        <!--<property name="name" value="LadyGaga" />-->
+        <!--<property name="age" value="30" />-->
+        <constructor-arg value="LadyGaga"/>
+        <!--<property name="age" value="30" />-->
+        <constructor-arg name="age" value="30"/>
+    </bean>
+    <bean id="duckShop" class="frank.ioc.DuckShop">
+        <!--<property name="name" value="比特烤鸭店"/>-->
+        <constructor-arg value="比特烤鸭店"/>
+        <property name="ducks">
+            <list>
+                <ref bean="duck1" />
+                <ref bean="duck2" />
+            </list>
+        </property>
+    </bean>
+</beans>
